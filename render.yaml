@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: cas-cakes-lytle
+    runtime: node
+    plan: free
+    region: ohio
+    buildCommand: node --check cas-server.js && node --check cas.js
+    startCommand: npm start
+    healthCheckPath: /api/config
+    domains:
+      - www.cascakeslytle.com
+    envVars:
+      - key: DELIVERY_RATE_PER_MILE
+        value: "2"
+      - key: SQUARE_ENVIRONMENT
+        value: sandbox

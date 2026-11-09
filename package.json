@@ -1,0 +1,12 @@
+{
+  "name": "cascakeslytle",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cassidy's custom cake shop",
+  "scripts": {
+    "start": "node cas-server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
